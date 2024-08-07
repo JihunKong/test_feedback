@@ -14,7 +14,7 @@ def extract_text_from_image(image):
 def get_gpt_response(prompt):
     try:
         response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4o",
             messages=[
                 {"role": "system", "content": "당신은 한국어 교육 전문가이며, 학생들의 문제 풀이를 도와주는 역할을 합니다."},
                 {"role": "user", "content": prompt}
