@@ -21,7 +21,7 @@ def analyze_image_with_gpt4(image, user_answer, correct_answer):
 
     try:
         response = client.chat.completions.create(
-            model="gpt-4-vision-preview",
+            model="gpt-4o",
             messages=[
                 {
                     "role": "user",
