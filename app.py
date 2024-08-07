@@ -29,7 +29,9 @@ def analyze_image_with_gpt4(image, user_answer, correct_answer):
                         {"type": "text", "text": prompt},
                         {
                             "type": "image_url",
-                            "image_url": f"data:image/jpeg;base64,{base64_image}"
+                            "image_url": {
+                                "url": f"data:image/jpeg;base64,{base64_image}"
+                            }
                         }
                     ]
                 }
