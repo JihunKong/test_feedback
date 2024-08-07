@@ -57,7 +57,7 @@ if uploaded_file is not None:
         if user_answer and correct_answer:
             gpt_response = analyze_image_with_gpt4(uploaded_file, user_answer, correct_answer)
             
-            st.write("### GPT-4 분석 및 해설:")
+            st.write("### GPT 분석 및 해설:")
             st.write(gpt_response)
         else:
             st.warning("답변과 정답을 모두 입력해주세요.")
